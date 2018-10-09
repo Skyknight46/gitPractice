@@ -1,7 +1,17 @@
 # gitPractice
-Welkom in de practice repository van klas bin 1a. Hier kan iedereen op z'n eigen gelegenheid dingen uitproberen met git en GitHub. De hoeveelheid features van GitHub kunnen wat overweldigend zijn. Wees niet bang om ze uit te proberen!
 
-De belangrijke functies die we van GitHub kunnen/gaan gebruiken in het eerste blok zijn:
+# Disclaimer
+Alles wat hier uitgelegd is komt van een beginnend student.  Ik houd geen aansprakelijkheid voor verkeerde resultaten of problemen die ontstaan door het klakkeloos nadoen van wat hier staat. Neem echter gerust contact op als je vragen of opmerkingen hebt.
+
+
+# Intro
+Welkom in de practice repository van klas bin jaar 1. Hier kan iedereen op z'n eigen
+gelegenheid dingen uitproberen met git en GitHub. De hoeveelheid features van
+GitHub kunnen wat overweldigend zijn. Wees niet bang om ze uit te proberen!
+
+Eerst komt er wat uitleg over [**git**](#git-installeren), en dáárna pas over [**GitHub**](#github). Ze werken nauw samen, maar het zijn verschillende dingen.
+
+De belangrijke functies die we van GitHub kunnen/~~moeten~~ gebruiken in het eerste blok zijn:
   - Online opslag plek
       - Je kunt met je groepje alle scripts op één plek bewaren met de online 'repository' van GitHub.
   - (Grafisch) Versie overzicht
@@ -9,8 +19,8 @@ De belangrijke functies die we van GitHub kunnen/gaan gebruiken in het eerste bl
 
 
 
-## <span style="color:red">LET OP!</span>
-Eerst komt er wat uitleg over [**git**](#git-installeren), en dáárna pas over [**GitHub**](#github). Ze werken nauw samen, maar het zijn verschillende dingen.
+
+
 
 ### git installeren
 om git te kunnen gebruiken moet je het natuurlijk geïnstalleerd hebben.
@@ -36,33 +46,54 @@ git config --global user.email <naam achternaam>
 de `--global` marker zorgt ervoor dat je deze variables voor alle git-projecten op de computer zet. Als je per project een andere naam wilt gebruiken moet je dat per map met `git config user.name` aanpassen. [hier meer over het  instellen van git](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup "maar je hoeft dit niet allemaal te doen, hoor")
 
 
-### Je eerste eigen repo maken
+### Je eerste eigen *lokale* repo maken
 Zodra je git goed geïnstalleerd hebt kun je meteen lokaal aan de slag. Wil je straks direct vanuit je terminal dingen uploaden naar GitHub? Zorg dan dat je een GitHub account hebt aangemaakt.
 
-Om een repository met git te initiëren, ga je met
-`cd <directorynaam>` naar de directory die je wilt tracken met git. Om git aan het werk te zetten typ je `git init`
+Om een repository met git te initiëren, ga je eerst naar de directory die je wilt tracken met git,
+```bash
+cd <directorynaam>
+```
+Om git nu aan het werk te zetten gebruik je het volgende commando:
+```
+git init
+```
 Hiermee vertel je git om de bestanden van de huidige directory bij te houden.
 
-<span style="color:green">tip: Om snel je terminal te openen in een specifieke map kun je in Ubuntu in [Nautilus](https://www.linuxquestions.org/questions/ubuntu-63/what-is-nautilus-519503/ "Nautilus is de default file manager van Ubuntu") rechts op een map (of op een wit vlak in een map) klikken en op "Open in Terminal" klikken. Hetzelfde geldt voor Git Bash in windows.</span>
+
+
+###### tip: Om snel je terminal te openen in een specifieke map kun je in Ubuntu in [Nautilus](https://www.linuxquestions.org/questions/ubuntu-63/what-is-nautilus-519503/ "Nautilus is de default file manager van Ubuntu") rechts op een map (of op een wit vlak in een map) klikken en op "Open in Terminal" klikken. Hetzelfde geldt voor Git Bash in windows.
 ![nautilus](https://github.com/Queuebee2/gitPractice/blob/master/images/ubuntu_open_in_terminal_from_nautilus.PNG?raw=true "How to open a terminal quickly in nautilus" )
 
 Wanneer je dat gedaan hebt kun je bestanden in de directory met de volgende commando's in sync houden met github
 
-|  Command				       | wat het doet|
-| ---------------------- | ----------- |
-| `git init `		      | initaliseert een map |
-| `git clone <linkNaarRepo> <naam>` | kloont (downloadt) een repository (van bijvoorbeeld GitHub). "`<naam>`" is optioneel, daarmee kun je het je eigen naam geven.|
-| `git status `			   | geeft de current status en staging area|
-| `git add <file> `		 | voeg een bestand aan de staging area toe|
-| `git add .  `			   | voeg alle veranderingen aan de staging area toe|
-| `git reset HEAD -- <file>`		| verwijder een bestand uit de lijst van gestagede items|
-| `git commit -m "Title" -m "Descr"`	|commit staged files met een titel en descriptie message|
-| `git push origin master	`		| upload committed files naar de origin's master branch|
+|  Command				                   | wat het doet|
+| ----------------------             | ----------- |
+| `git init `		                     | initaliseert een map |
+| `git clone <linkNaarRepo> <naam>`  | kloont (downloadt) een repository  (van bijvoorbeeld GitHub). "`<naam>`" is optioneel, daarmee kun je het je eigen naam geven.|
+| `git status `			                 | geeft de current status en staging area|
+| `git add <file> `		               | voeg een bestand aan de staging area toe|
+| `git add .  `			                 | voeg alle veranderingen aan de staging area toe|
+| `git reset HEAD -- <file>`		     | verwijder een bestand uit de lijst van gestagede items|
+| `git commit -m "Title" -m "Descr"` |commit staged files met een titel en descriptie message|
+| `git push origin master	`	       	 | upload committed files naar de origin's master branch|
+
 
 
 ### GitHub
 GitHub is een soort¿ de online versie van git. Met git kun je (via de terminal) communiceren met GitHub om bestanden/projecten up-todate te houden, te downloaden of juist de uploaden.
 Verder biedt GitHub features zoals je die misschien gewent bent van social media platforms zoals Facebook, maar op een zakelijkere manier. Uiteindelijk is het gebruik van GitHub bedoelt voor het delen en bijhouden van code.
+
+### Stappenplan
+
+
+#### voor een _local_ repoistory
+1. `git init` in de map die je gaat gebruiken
+2. creëer een bestand
+3. `git add . ` voeg je bestanden hiermee aan de staging area toe.
+4. `git commit -m "Title" -m "Descr"` 'commit' betekent dat je je toewijd aan de aanpassingen en hiermee definitief de gestagede items in de repository zet.
+
+#### voor een al bestaande (bijv. op GitHub) repository
+placeholder text
 
 
 ### Opdracht 1 - pull request
@@ -98,11 +129,13 @@ Als je toegang hebt tot deze repository, nodig ik je uit om zelf wat dingetjes t
 
 -------------
 
+### andere handige bronnen
+Op internet zijn veel uitgebreidere en erg duidelijke guides geschreven over git.
 
-
-
-
-
-
-
-### op verzoek kan ik meer uitleggen. Het is allemaal best veel, dus gerichte vragen zijn soms handiger dan globale uitleg. Ik raad ook iedereen aan om lekker zelf te googlen en op bijv https://git-scm.com/ de documentatie te lezen.
+|                                                   |
+|---------------------------------------------------|
+|https://guides.github.com/activities/hello-world/  |
+|https://learngitbranching.js.org/                  |  
+|https://try.github.io/                             |  
+| https://git-scm.com/                              |
+|http://kbroman.org/github_tutorial/                |

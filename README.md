@@ -1,5 +1,25 @@
 # gitPractice
 
+# table of contents
+- [gitPractice](#gitpractice)
+- [Disclaimer](#disclaimer)
+- [Intro](#intro)
+    + [git installeren](#git-installeren)
+      - [in linux](#in-linux)
+      - [in windows](#in-windows)
+    + [git instellen](#git-instellen)
+    + [Je eerste eigen *lokale* repo maken](#je-eerste-eigen--lokale--repo-maken)
+    + [GitHub](#github)
+    + [Stappenplan](#stappenplan)
+      - [voor een _local_ repoistory](#voor-een--local--repoistory)
+      - [voor een al bestaande (bijv. op GitHub) repository](#voor-een-al-bestaande--bijv-op-github--repository)
+    + [Opdracht 1 - pull request](#opdracht-1---pull-request)
+
+    + [Opdracht 2](#opdracht-2)
+    + [andere handige bronnen](#andere-handige-bronnen)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Disclaimer
 Alles wat hier uitgelegd is komt van een beginnend student.  Ik houd geen aansprakelijkheid voor verkeerde resultaten of problemen die ontstaan door het klakkeloos nadoen van wat hier staat. Neem echter gerust contact op als je vragen of opmerkingen hebt.
 
